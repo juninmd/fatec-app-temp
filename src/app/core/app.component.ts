@@ -21,13 +21,8 @@ export class AppComponent {
   }
 
   closeMenu() {
-    console.log('a')
     this.menu.close();
   }
 
-  github() {
-    window.open('https://github.com/juninmd/fatec-franca-app', '_blank')
-    this.menu.close();
-  }
 
 }

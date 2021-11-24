@@ -30,11 +30,6 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'util',
-    loadChildren: () => import('../pages/utils/utils.module').then( m => m.UtilsPageModule),
-    canActivate: [AuthGuard]
-  },
-  {
     path: 'eventos',
     loadChildren: () => import('../pages/eventos/eventos.module').then( m => m.EventosPageModule),
     canActivate: [AuthGuard]

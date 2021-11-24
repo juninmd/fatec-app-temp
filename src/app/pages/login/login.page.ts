@@ -1,7 +1,8 @@
+import { AlertController, MenuController, NavController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
+
 import { FatecFrancaApiService } from 'src/app/services/fatec-franca-api.service';
 import { NgForm } from '@angular/forms';
-import { NavController, AlertController, MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -18,7 +19,7 @@ export class LoginPage implements OnInit {
     private menu: MenuController) {
   }
 
-  version = '0.0.6';
+  version = '1.0.0';
   saveLogin = localStorage.getItem('saveLogin') === 'true';
 
   ngOnInit() {
